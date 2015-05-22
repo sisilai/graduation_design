@@ -1,23 +1,20 @@
-﻿<!DOCTYPE html>
+<!--在线订购-->
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="onlineOrdering.aspx.cs" Inherits="onlineOrdering" validaterequest="false"%>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="imgs/favicon.ico">
-
-    <title>新闻中心</title>
-
-    <!-- Bootstrap core CSS -->
+    <title>在线订购</title>
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
     <link href="css/offcanvas.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <link href="css/ordering.css" rel="stylesheet">
     <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="assets/js/ie-emulation-modes-warning.js"></script>
 
@@ -43,8 +40,8 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="index.html">首页</a></li>
-                <li class="active"><a href="newsCenter.aspx">新闻中心</a></li>
-                <li><a href="online_ordering.html">在线订购</a></li>
+                <li><a href="newsCenter.aspx">新闻中心</a></li>
+                <li class="active"><a href="onlineOrdering.aspx">在线订购</a></li>
                 <li><a href="customer_service_center.html">客服中心</a></li>
                 <li><a href="customer_message.html">客户留言</a></li>
             </ul>
@@ -53,33 +50,41 @@
 </nav><!-- /.navbar -->
 
 <div class="container">
+    <!--<a href="alipay/default.aspx">-->
+        <!--<div class="row featurette order-item">-->
+            <!--<div class="col-md-7">-->
+                <!--<h2 class="featurette-heading">汽车1 <span class="text-muted">简介1</span></h2>-->
+                <!--<p class="lead">内容1</p>-->
+            <!--</div>-->
+            <!--<div class="col-md-5 pt-10 pb-10">-->
+                <!--<img class="featurette-image img-responsive center-block" src="imgs/carousel_1.jpg" alt="汽车1">-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</a>-->
+    <form runat="server">
+                    <asp:GridView ID="gvCars" runat="server" Width="100%" Height="120px" GridLines="None" ShowHeader="False" EnableModelValidation="True" AutoGenerateColumns="False">
+                            <AlternatingRowStyle BackColor="White" />
+                            <Columns>
+                                      <asp:TemplateField ItemStyle-Width="20%">
+                                          <ItemTemplate>
+                                              <asp:Image ID="carImg" ImageUrl="imgs/carousel_1.jpg" runat="server" Width="200px" Height="100px" />
+                                          </ItemTemplate>
+                                      </asp:TemplateField>
+                                <asp:BoundField DataField="id" Visible = "False"/>
+                                <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="alipay/default.aspx?id={0}" DataTextField="title"  Target="_blank"  ItemStyle-Width="80%"/>
 
-    <div class="row row-offcanvas row-offcanvas-right">
-        <div class="col-xs-6 col-sm-12 sidebar-offcanvas" id="sidebar">
-            <div class="list-group">
-                <a href="#" class="list-group-item active">新闻中心</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-            </div>
-        </div><!--/.sidebar-offcanvas-->
-    </div><!--/row-->
-
-    <hr>
-
+                            </Columns>
+                            <RowStyle Height="120px"/>
+                                   <selectedrowstyle backcolor="LightCyan"
+                                     forecolor="DarkBlue"
+                                     font-bold="true"/>
+                        </asp:GridView>
+                        </form>
+    <!-- /END THE FEATURETTES -->
     <footer>
         <p>&copy; 东华理工大学长江学院 2015</p>
     </footer>
-
 </div><!--/.container-->
-
-
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
