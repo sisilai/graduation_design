@@ -48,11 +48,11 @@
                                 <asp:BoundField DataField="price" HeaderText="价格(万元)" />
                                 <asp:BoundField DataField="time" HeaderText="时间" />
                                 <asp:HyperLinkField HeaderText="查看内容" DataNavigateUrlFields="id" DataNavigateUrlFormatString="carsInfoDetail.aspx?Id={0}" Text="查看内容" Target="_blank" />
-                                <asp:HyperLinkField HeaderText="查看内容" DataNavigateUrlFields="id" DataNavigateUrlFormatString="editCarsInfo.aspx?Id={0}" Text="编辑" Target="_blank" />
-                                <asp:TemplateField ShowHeader="False">
+                                <asp:HyperLinkField HeaderText="编辑信息" DataNavigateUrlFields="id" DataNavigateUrlFormatString="editCarsInfo.aspx?Id={0}" Text="编辑信息" Target="_blank" />
+                                <asp:TemplateField ShowHeader="True" HeaderText="删除信息">
                                                             <ItemTemplate>
                                                                 <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Delete"
-                                                                    Text="删除" OnClientClick='<%#  "if (!confirm(\"你确定要删除" + Eval("title").ToString() + "吗?\")) return false;"%>'></asp:LinkButton>
+                                                                    Text="删除信息" OnClientClick='<%#  "if (!confirm(\"你确定要删除" + Eval("title").ToString() + "吗?\")) return false;"%>'></asp:LinkButton>
                                                             </ItemTemplate>
                                                         </asp:TemplateField>
                             </Columns>

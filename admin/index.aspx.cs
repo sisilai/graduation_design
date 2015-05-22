@@ -34,45 +34,9 @@ public partial class admin_index : System.Web.UI.Page
         GridView1.DataBind();
         sqlcon.Close();
     }
-    //protected void GridView1_RowEditing(object sender, GridViewEditEventArgs e)
-    //{
-    //    GridView1.EditIndex = e.NewEditIndex;
-    //    bind();
-    //}
-    //protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
-    //{
-    //    string sqlstr = "delete from gd_cars where Id='" + GridView1.DataKeys[e.RowIndex].Value.ToString() + "'";
-    //    sqlcon = new SqlConnection(strCon);
-    //    sqlcom = new SqlCommand(sqlstr, sqlcon);
-    //    sqlcon.Open();
-    //    sqlcom.ExecuteNonQuery();
-    //    sqlcon.Close();
-    //    bind();
-    //}
-    //protected void GridView1_RowUpdating(object sender, GridViewUpdateEventArgs e)
-    //{
-    //    sqlcon = new SqlConnection(strCon);
-    //    string sqlstr = "update gd_cars set XingMing='"
-    //        + ((TextBox)(GridView1.Rows[e.RowIndex].Cells[1].Controls[0])).Text.ToString().Trim() + "',ShenFenZheng='"
-    //        + ((TextBox)(GridView1.Rows[e.RowIndex].Cells[2].Controls[0])).Text.ToString().Trim() + "',ShouJiHao='"
-    //        + ((TextBox)(GridView1.Rows[e.RowIndex].Cells[3].Controls[0])).Text.ToString().Trim() + "' where Id='"
-    //        + GridView1.DataKeys[e.RowIndex].Value.ToString() + "'";
-    //    sqlcom = new SqlCommand(sqlstr, sqlcon);
-    //    sqlcon.Open();
-    //    sqlcom.ExecuteNonQuery();
-    //    sqlcon.Close();
-    //    GridView1.EditIndex = -1;
-    //    bind();
-    //}
-    //protected void GridView1_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
-    //{
-    //    GridView1.EditIndex = -1;
-    //    bind();
-    //}
 
     protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
     {
-        //int id = Convert.ToInt32(GridView1.DataKeys[e.RowIndex].Value.ToString());
         string strSql = "delete from gd_cars where id = @id";
         SqlConnection cn = new SqlConnection(strCon);
         SqlCommand cmd = new SqlCommand(strSql, cn);

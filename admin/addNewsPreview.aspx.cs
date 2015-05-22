@@ -11,26 +11,20 @@ public partial class admin_addNewsPreview : System.Web.UI.Page
 {
     string strConn = ConfigurationManager.ConnectionStrings["DatabaseConnection"].ConnectionString;
     string title=null;
-    string introduction=null;
-    float price=0;
     string content=null;
     string time=null;
     protected void Page_Load(object sender, EventArgs e)
     {
         title = Request.Form["title"].ToString();
-        introduction = Request.Form["introduction"].ToString();
-        price = float.Parse(Request.Form["price"].ToString());
         content = Request.Form["content"].ToString();
         time = DateTime.Now.ToLocalTime().ToString();
         Response.Write("<h3>发布预览</h3>" + "</br>");
-        Response.Write("车名："+title + "</br>");
-        Response.Write("简介："+introduction + "</br>");
-        Response.Write("价格："+price + "万元</br>");
+        Response.Write("标题："+title + "</br>");
         Response.Write("内容："+content + "</br>");
         Response.Write("时间："+time + "</br>");
         SqlConnection conn = new System.Data.SqlClient.SqlConnection(strConn);
-        string sql = String.Format("insert into [gd_cars](title,introduction,content,price,time) values('{0}','{1}','{2}','{3}','{4}')",
-            title, introduction, content, price, time);
+        string sql = String.Format("insert into [gd_news](title,content,time) values('{0}','{1}','{2}')",
+            title, content, time);
         try
         {
             conn.Open();
@@ -38,7 +32,7 @@ public partial class admin_addNewsPreview : System.Web.UI.Page
             int n = (int)comm.ExecuteNonQuery();
             if (n == 1)
             {
-                Response.Write("<script languge='javascript'>alert('发布成功');window.location.href='index.aspx';</script>");
+                Response.Write("<script languge='javascript'>alert('发布成功');window.location.href='news.aspx';</script>");
             }
             else
                 Response.Write("发布失败");
