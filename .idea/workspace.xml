@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02f7f7c0-f882-4050-bc9c-5dca84176a96" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/alipay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/carsDetail.aspx.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/carsDetail.aspx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/customerMessage.html" />
-      <change type="DELETED" beforePath="D:\Laisisi\graduation_design\chat.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Laisisi\graduation_design\customer_service_center.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer_message.html" afterPath="$PROJECT_DIR$/customer_message.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alipay/default.aspx.cs" afterPath="$PROJECT_DIR$/alipay/default.aspx.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/alipay/default.aspx" afterPath="$PROJECT_DIR$/alipay/default.aspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/details.html" afterPath="$PROJECT_DIR$/details.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newsCenter.aspx" afterPath="$PROJECT_DIR$/newsCenter.aspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newsDetail.aspx" afterPath="$PROJECT_DIR$/newsDetail.aspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/onlineOrdering.aspx" afterPath="$PROJECT_DIR$/onlineOrdering.aspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/online_ordering.html" afterPath="$PROJECT_DIR$/online_ordering.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="D:\Laisisi\graduation_design\customer_message.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\Laisisi\graduation_design\online_ordering.html" afterPath="" />
     </list>
     <ignored path="graduation_design.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -249,7 +235,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -259,7 +245,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25347593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25347593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -639,14 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/customer_message.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30193236" vertical-offset="498" max-vertical-offset="2805">
-          <caret line="44" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/online_ordering.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.020531401" vertical-offset="68" max-vertical-offset="1853">
@@ -693,6 +671,14 @@
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customer_message.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30193236" vertical-offset="498" max-vertical-offset="2805">
+          <caret line="44" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
