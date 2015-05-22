@@ -37,7 +37,7 @@
                 </ul>
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                <h1 class="sub-header">添加汽车信息</h1>
+                <h1 class="sub-header">添加汽车信息s</h1>
                 <form id="form1" runat="server" action="addCarsPreview.aspx" method="post">
                     <div>
                         <div><span>标题：</span><asp:TextBox ID="Title" name="title" runat="server"></asp:TextBox></div>
