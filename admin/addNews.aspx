@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="addCarsInfo.aspx.cs" Inherits="admin_addCarsInfo" validaterequest="false"%>
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="addNews.aspx.cs" Inherits="admin_addNews" validaterequest="false"%>
 
 <!DOCTYPE html>
 
