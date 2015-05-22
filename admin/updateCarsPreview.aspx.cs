@@ -24,7 +24,7 @@ public partial class admin_updateCarsPreview : System.Web.UI.Page
         price = float.Parse(Request.Form["price"].ToString());
         content = Request.Form["content"].ToString();
         time = DateTime.Now.ToLocalTime().ToString();
-        Response.Write("<h5>发布预览</h5>" + "</br>");
+        Response.Write("<h3>发布预览</h3>" + "</br>");
         Response.Write("车名：" + title + "</br>");
         Response.Write("简介：" + introduction + "</br>");
         Response.Write("价格：" + price + "万元</br>");
