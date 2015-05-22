@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02f7f7c0-f882-4050-bc9c-5dca84176a96" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/carsInfoDetail.aspx.cs" afterPath="$PROJECT_DIR$/admin/carsInfoDetail.aspx.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.aspx.cs" afterPath="$PROJECT_DIR$/admin/index.aspx.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.aspx" afterPath="$PROJECT_DIR$/admin/index.aspx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/news.aspx" afterPath="$PROJECT_DIR$/admin/news.aspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/newsDetail.aspx.cs" afterPath="$PROJECT_DIR$/admin/newsDetail.aspx.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/newsDetail.aspx" afterPath="$PROJECT_DIR$/admin/newsDetail.aspx" />
     </list>
     <ignored path="graduation_design.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +30,8 @@
       <file leaf-file-name="news.aspx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/news.aspx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37546012" vertical-offset="408" max-vertical-offset="1513">
-              <caret line="42" column="69" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
+            <state vertical-scroll-proportion="0.79263806" vertical-offset="510" max-vertical-offset="1513">
+              <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -46,8 +42,8 @@
       <file leaf-file-name="index.aspx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/index.aspx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.76923" vertical-offset="460" max-vertical-offset="1394">
-              <caret line="68" column="14" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
+            <state vertical-scroll-proportion="-11.076923" vertical-offset="460" max-vertical-offset="1394">
+              <caret line="44" column="98" selection-start-line="44" selection-start-column="98" selection-end-line="44" selection-end-column="98" />
               <folding />
             </state>
           </provider>
@@ -607,16 +603,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/index.aspx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.76923" vertical-offset="460" max-vertical-offset="1394">
-          <caret line="68" column="14" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
+        <state vertical-scroll-proportion="-11.076923" vertical-offset="460" max-vertical-offset="1394">
+          <caret line="44" column="98" selection-start-line="44" selection-start-column="98" selection-end-line="44" selection-end-column="98" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/news.aspx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37546012" vertical-offset="408" max-vertical-offset="1513">
-          <caret line="42" column="69" selection-start-line="42" selection-start-column="69" selection-end-line="42" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.79263806" vertical-offset="510" max-vertical-offset="1513">
+          <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#a#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

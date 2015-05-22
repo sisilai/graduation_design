@@ -39,10 +39,10 @@
                 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                     <h1 class="sub-header">汽车信息<a href="addCarsInfo.aspx" style="font-size: 14px;padding-left: 20px;" title="新增汽车信息" target="_parent">新增</a></h1>
                     <div class="table-responsive">
-                        <asp:GridView ID="gvCars" runat="server" EnableModelValidation="True" CellPadding="4" ForeColor="Black" GridLines="Vertical" AutoGenerateColumns="False" OnRowDeleting="gvCars_RowDeleting">
+                        <asp:GridView ID="gvCars" runat="server" Width="100%"  EnableModelValidation="True" CellPadding="4" ForeColor="Black" GridLines="Vertical" AutoGenerateColumns="False" OnRowDeleting="gvCars_RowDeleting">
                             <AlternatingRowStyle BackColor="White" />
                             <Columns>
-                                <asp:BoundField DataField="id" HeaderText="编号" />
+                                <asp:BoundField DataField="id" HeaderText="编号" ItemStyle-Height="30px"/>
                                 <asp:BoundField DataField="title" HeaderText="车名" />
                                 <asp:BoundField DataField="introduction" HeaderText="简介" />
                                 <asp:BoundField DataField="price" HeaderText="价格(万元)" />

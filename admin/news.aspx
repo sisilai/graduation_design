@@ -42,10 +42,10 @@
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             <h1 class="sub-header">新闻中心<a href="addNews.aspx" style="font-size: 14px;padding-left: 20px;" title="新增汽车新闻" target="_parent">新增</a></h1>
                     <div class="table-responsive">
-                        <asp:GridView ID="gvNews" runat="server" EnableModelValidation="True" CellPadding="4" ForeColor="Black" GridLines="Vertical" AutoGenerateColumns="False" OnRowDeleting="gvNews_RowDeleting">
+                        <asp:GridView ID="gvNews" runat="server" Width="100%" EnableModelValidation="True" CellPadding="4" ForeColor="Black" GridLines="Vertical" AutoGenerateColumns="False" OnRowDeleting="gvNews_RowDeleting">
                             <AlternatingRowStyle BackColor="White" />
                             <Columns>
-                                <asp:BoundField DataField="id" HeaderText="编号" />
+                                <asp:BoundField DataField="id" HeaderText="编号" ItemStyle-Height="30px"/>
                                 <asp:BoundField DataField="title" HeaderText="标题" />
                                 <asp:BoundField DataField="time" HeaderText="时间" />
                                 <asp:HyperLinkField HeaderText="查看内容" DataNavigateUrlFields="id" DataNavigateUrlFormatString="newsDetail.aspx?id={0}" Text="查看内容" Target="_blank" />
