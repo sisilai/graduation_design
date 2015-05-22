@@ -30,7 +30,7 @@
     </div>
 </nav>
 
-<form id="form1" runat="server">
+<form runat="server">
     <div class="container-fluid">
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
