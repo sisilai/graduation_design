@@ -47,7 +47,7 @@
                         <!-- 加载编辑器的容器 -->
                         <div>
                             <span>详情内容：</span>
-                        <script id="Content" name="content" type="text/plain">详细说下这款车吧</script>
+                        <script id="Content" name="content" type="text/plain"></script>
                         </div>
                         <input type="submit" value="提交" />
                     </div>

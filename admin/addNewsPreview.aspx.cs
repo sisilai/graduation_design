@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class admin_addCarsPreview : System.Web.UI.Page
+public partial class admin_addNewsPreview : System.Web.UI.Page
 {
     string strConn = ConfigurationManager.ConnectionStrings["DatabaseConnection"].ConnectionString;
     string title=null;

@@ -42,12 +42,10 @@
                 <form id="form1" runat="server" action="addNewsPreview.aspx" method="post">
                     <div>
                         <div><span>标题：</span><asp:TextBox ID="Title" name="title" runat="server"></asp:TextBox></div>
-                        <div><span>简介：</span><asp:TextBox ID="Introduction" name="introduction" runat="server" style="width:95%;"></asp:TextBox></div>
-                        <div><span>价格：</span><asp:TextBox ID="Price" name="price" runat="server"></asp:TextBox>万元</div>
                         <!-- 加载编辑器的容器 -->
                         <div>
                             <span>详情内容：</span>
-                        <script id="Content" name="content" type="text/plain">详细说下这款车吧</script>
+                        <script id="Content" name="content" type="text/plain"></script>
                         </div>
                         <input type="submit" value="提交" />
                     </div>
