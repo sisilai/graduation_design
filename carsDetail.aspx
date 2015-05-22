@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+<!--新闻中心-->
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="carsDetail.aspx.cs" Inherits="carsDetail" validaterequest="false"%>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -9,7 +12,7 @@
     <meta name="author" content="">
     <link rel="icon" href="imgs/favicon.ico">
 
-    <title>客服中心</title>
+    <title>新闻中心</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -44,35 +47,40 @@
             <ul class="nav navbar-nav">
                 <li><a href="index.html">首页</a></li>
                 <li><a href="newsCenter.aspx">新闻中心</a></li>
-                <li><a href="onlineOrdering.aspx">在线订购</a></li>
-                <li class="active"><a href="customer_service_center.html">客服中心</a></li>
-                <li><a href="customer_message.html">客户留言</a></li>
+                <li class="active"><a href="onlineOrdering.aspx">在线订购</a></li>
+                <li><a href="customerMessage.html">在线客服</a></li>
             </ul>
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="想问什么问题？">
-                </div>
-                <button type="submit" class="btn btn-default">检索</button>
-            </form>
         </div><!-- /.nav-collapse -->
     </div><!-- /.container -->
 </nav><!-- /.navbar -->
 
-<div class="container">
+<form runat="server">
+    <div class="container">
 
     <div class="row row-offcanvas row-offcanvas-right">
         <div class="col-xs-6 col-sm-12 sidebar-offcanvas" id="sidebar">
             <div class="list-group">
-                <a href="#" class="list-group-item active">客服中心</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
-                <a href="#" class="list-group-item">Link</a>
+                <a href="#" class="list-group-item active">在线订购</a>
+                                    <div style="text-align: center">
+                                        <h3 style="height: 30px;line-height: 30px">
+                                        <asp:Label ID="Title" runat="server"></asp:Label>
+                                        </h3>
+                                    </div>
+                                    <div>
+                                        <asp:Label ID="Introduction" runat="server"></asp:Label></div>
+                                    <div>
+                                    <div>价格：￥
+                                        <asp:Label ID="Price" runat="server"></asp:Label>万元
+                                        <span style="padding:10px ">*该商品支持支付宝担保交易</span>
+                                        <asp:ImageButton
+                                        runat="server"
+                                        ImageUrl="imgs/alipay.png"
+                                        ToolTip="支付宝支付"/>
+                                    </div>
+                                    <div>
+                                        <asp:Label ID="Content" runat="server"></asp:Label>
+                                    </div>
+                                        发布时间：<asp:Label ID="Time" runat="server"></asp:Label>
             </div>
         </div><!--/.sidebar-offcanvas-->
     </div><!--/row-->
@@ -84,7 +92,7 @@
     </footer>
 
 </div><!--/.container-->
-
+</form>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->

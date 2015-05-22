@@ -42,36 +42,26 @@
                 <li><a href="index.html">首页</a></li>
                 <li><a href="newsCenter.aspx">新闻中心</a></li>
                 <li class="active"><a href="onlineOrdering.aspx">在线订购</a></li>
-                <li><a href="customer_service_center.html">客服中心</a></li>
-                <li><a href="customer_message.html">客户留言</a></li>
+
+                <li><a href="customerMessage.html">在线客服</a></li>
             </ul>
         </div><!-- /.nav-collapse -->
     </div><!-- /.container -->
 </nav><!-- /.navbar -->
 
 <div class="container">
-    <!--<a href="alipay/default.aspx">-->
-        <!--<div class="row featurette order-item">-->
-            <!--<div class="col-md-7">-->
-                <!--<h2 class="featurette-heading">汽车1 <span class="text-muted">简介1</span></h2>-->
-                <!--<p class="lead">内容1</p>-->
-            <!--</div>-->
-            <!--<div class="col-md-5 pt-10 pb-10">-->
-                <!--<img class="featurette-image img-responsive center-block" src="imgs/carousel_1.jpg" alt="汽车1">-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</a>-->
     <form runat="server">
                     <asp:GridView ID="gvCars" runat="server" Width="100%" Height="120px" GridLines="None" ShowHeader="False" EnableModelValidation="True" AutoGenerateColumns="False">
                             <AlternatingRowStyle BackColor="White" />
                             <Columns>
                                       <asp:TemplateField ItemStyle-Width="20%">
                                           <ItemTemplate>
-                                              <asp:Image ID="carImg" ImageUrl="imgs/carousel_1.jpg" runat="server" Width="200px" Height="100px" />
+                                              <asp:Image ID="carImg" ImageUrl="imgs/carousel_1.jpg" runat="server" Width="180px" Height="100px" />
                                           </ItemTemplate>
                                       </asp:TemplateField>
                                 <asp:BoundField DataField="id" Visible = "False"/>
-                                <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="alipay/default.aspx?id={0}" DataTextField="title"  Target="_blank"  ItemStyle-Width="80%"/>
+                                <asp:HyperLinkField DataNavigateUrlFields="id" DataNavigateUrlFormatString="carsDetail.aspx?id={0}" DataTextField="title" Target="_blank" ItemStyle-Width="70%"/>
+                                <asp:BoundField DataField="price" DataFormatString="￥{0:C3}万元" ItemStyle-Width="10%"/>
 
                             </Columns>
                             <RowStyle Height="120px"/>

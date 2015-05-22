@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Data;
 using System.Configuration;
 using System.Web;
@@ -45,7 +45,7 @@ public partial class _Default : System.Web.UI.Page
             WIDsubject.Text = "汽车1";
             WIDprice.Text = "1000000";
             WIDbody.Text = "内容1";
-            WIDshow_url.Text = "http://www.ndd001.com/graduation_design/onlineOrdering.aspx";
+            WIDshow_url.Text = "http://www.ndd001.com/graduation_design/online_ordering.html";
         }
     }
     public static string GetTimeStamp()
