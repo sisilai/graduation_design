@@ -1,3 +1,4 @@
+<!--添加汽车新闻-->
 <%@ Page Language="C#" AutoEventWireup="true" CodeFile="addNews.aspx.cs" Inherits="admin_addNews" validaterequest="false"%>
 
 <!DOCTYPE html>
@@ -10,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../imgs/favicon.ico">
-    <title>在线汽车销售 - 后台汽车信息</title>
+    <title>在线汽车销售 - 后台新闻管理</title>
     <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/dashboard.css" rel="stylesheet">
     <script src="../assets/js/ie-emulation-modes-warning.js"></script>
@@ -21,8 +22,8 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only"><a href="index.aspx"><span class="sr-only">1(current)</span></a></span>
-                    <span class="icon-bar"><a href="news.aspx">2</a></span>
+                    <span class="sr-only"><a href="index.aspx"><span>1</span></a></span>
+                    <span class="icon-bar"><a href="news.aspx"><span class="sr-only">2</span></a></span>
                 </button>
                 <a class="navbar-brand" href="#">在线汽车销售后台管理</a>
             </div>
@@ -32,13 +33,13 @@
         <div class="row">
             <div class="col-sm-3 col-md-2 sidebar">
                 <ul class="nav nav-sidebar">
-                    <li class="active"><a href="index.aspx">汽车信息 <span class="sr-only">(current)</span></a></li>
-                    <li><a href="news.aspx">新闻中心</a></li>
+                    <li><a href="index.aspx">汽车信息</a></li>
+                    <li class="active"><a href="news.aspx">新闻中心<span class="sr-only">(current)</span></a></li>
                 </ul>
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                <h1 class="sub-header">添加汽车信息</h1>
-                <form id="form1" runat="server" action="addCarsPreview.aspx" method="post">
+                <h1 class="sub-header">添加汽车新闻</h1>
+                <form id="form1" runat="server" action="addNewsPreview.aspx" method="post">
                     <div>
                         <div><span>标题：</span><asp:TextBox ID="Title" name="title" runat="server"></asp:TextBox></div>
                         <div><span>简介：</span><asp:TextBox ID="Introduction" name="introduction" runat="server" style="width:95%;"></asp:TextBox></div>
