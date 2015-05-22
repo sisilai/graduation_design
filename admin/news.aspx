@@ -48,11 +48,11 @@
                                 <asp:BoundField DataField="id" HeaderText="编号" />
                                 <asp:BoundField DataField="title" HeaderText="标题" />
                                 <asp:BoundField DataField="time" HeaderText="时间" />
-                                <asp:HyperLinkField HeaderText="查看内容" DataNavigateUrlFields="id" DataNavigateUrlFormatString="newsDetail.aspx?Id={0}" Text="查看内容" Target="_blank" />
-                                <asp:HyperLinkField HeaderText="编辑信息" DataNavigateUrlFields="id" DataNavigateUrlFormatString="editNews.aspx?Id={0}" Text="编辑信息" Target="_blank" />
+                                <asp:HyperLinkField HeaderText="查看内容" DataNavigateUrlFields="id" DataNavigateUrlFormatString="newsDetail.aspx?id={0}" Text="查看内容" Target="_blank" />
+                                <asp:HyperLinkField HeaderText="编辑信息" DataNavigateUrlFields="id" DataNavigateUrlFormatString="editNews.aspx?id={0}" Text="编辑信息" Target="_blank" />
                                 <asp:TemplateField ShowHeader="True" HeaderText="删除信息">
                                                             <ItemTemplate>
-                                                                <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Delete"
+                                                                <asp:LinkButton ID="deleteNewsBtn" runat="server" CausesValidation="False" CommandName="Delete"
                                                                     Text="删除信息" OnClientClick='<%#  "if (!confirm(\"你确定要删除" + Eval("title").ToString() + "吗?\")) return false;"%>'></asp:LinkButton>
                                                             </ItemTemplate>
                                                         </asp:TemplateField>

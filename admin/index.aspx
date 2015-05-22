@@ -39,7 +39,7 @@
                 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                     <h1 class="sub-header">汽车信息<a href="addCarsInfo.aspx" style="font-size: 14px;padding-left: 20px;" title="新增汽车信息" target="_parent">新增</a></h1>
                     <div class="table-responsive">
-                        <asp:GridView ID="GridView1" runat="server" EnableModelValidation="True" CellPadding="4" ForeColor="Black" GridLines="Vertical" AutoGenerateColumns="False" OnRowDeleting="GridView1_RowDeleting">
+                        <asp:GridView ID="gvCars" runat="server" EnableModelValidation="True" CellPadding="4" ForeColor="Black" GridLines="Vertical" AutoGenerateColumns="False" OnRowDeleting="gvCars_RowDeleting">
                             <AlternatingRowStyle BackColor="White" />
                             <Columns>
                                 <asp:BoundField DataField="id" HeaderText="编号" />
@@ -47,11 +47,11 @@
                                 <asp:BoundField DataField="introduction" HeaderText="简介" />
                                 <asp:BoundField DataField="price" HeaderText="价格(万元)" />
                                 <asp:BoundField DataField="time" HeaderText="时间" />
-                                <asp:HyperLinkField HeaderText="查看内容" DataNavigateUrlFields="id" DataNavigateUrlFormatString="carsInfoDetail.aspx?Id={0}" Text="查看内容" Target="_blank" />
-                                <asp:HyperLinkField HeaderText="编辑信息" DataNavigateUrlFields="id" DataNavigateUrlFormatString="editCarsInfo.aspx?Id={0}" Text="编辑信息" Target="_blank" />
+                                <asp:HyperLinkField HeaderText="查看内容" DataNavigateUrlFields="id" DataNavigateUrlFormatString="carsInfoDetail.aspx?id={0}" Text="查看内容" Target="_blank" />
+                                <asp:HyperLinkField HeaderText="编辑信息" DataNavigateUrlFields="id" DataNavigateUrlFormatString="editCarsInfo.aspx?id={0}" Text="编辑信息" Target="_blank" />
                                 <asp:TemplateField ShowHeader="True" HeaderText="删除信息">
                                                             <ItemTemplate>
-                                                                <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Delete"
+                                                                <asp:LinkButton ID="deleteCarsBtn" runat="server" CausesValidation="False" CommandName="Delete"
                                                                     Text="删除信息" OnClientClick='<%#  "if (!confirm(\"你确定要删除" + Eval("title").ToString() + "吗?\")) return false;"%>'></asp:LinkButton>
                                                             </ItemTemplate>
                                                         </asp:TemplateField>

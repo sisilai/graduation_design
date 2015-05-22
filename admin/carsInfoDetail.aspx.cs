@@ -14,8 +14,8 @@ public partial class admin_carsInfoDetail : System.Web.UI.Page
     SqlCommand comm;
     protected void Page_Load(object sender, EventArgs e)
     {
-        int Id =Convert.ToInt32(Request.QueryString["Id"]);
-        string sql = String.Format("select * from gd_cars where Id='{0}'", Id);
+        int id =Convert.ToInt32(Request.QueryString["id"]);
+        string sql = String.Format("select * from gd_cars where id='{0}'", id);
         using (conn = new SqlConnection(strCon))
         {
             conn.Open();
