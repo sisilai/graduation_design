@@ -12,13 +12,13 @@
     <meta name="author" content="">
     <link rel="icon" href="imgs/favicon.ico">
 
-    <title>新闻中心</title>
+    <title>汽车信息详情</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/offcanvas.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -32,6 +32,7 @@
 </head>
 
 <body>
+
 <nav class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
         <div class="navbar-header">
@@ -57,52 +58,57 @@
 <form runat="server">
     <div class="container">
 
-    <div class="row row-offcanvas row-offcanvas-right">
-        <div class="col-xs-6 col-sm-12 sidebar-offcanvas" id="sidebar">
-            <div class="list-group">
-                <a href="#" class="list-group-item active">在线订购</a>
-                                    <div style="text-align: center">
-                                        <h3 style="height: 30px;line-height: 30px">
-                                        <asp:Label ID="Title" runat="server"></asp:Label>
-                                        </h3>
-                                    </div>
-                                    <div>
-                                        <asp:Label ID="Introduction" runat="server"></asp:Label></div>
-                                    <div>
-                                    <div>价格：￥
-                                        <asp:Label ID="Price" runat="server"></asp:Label>万元
-                                        <span style="padding:10px ">*该商品支持支付宝担保交易</span>
-                                        <asp:ImageButton
-                                        runat="server"
-                                        ImageUrl="imgs/alipay.png"
-                                        ToolTip="支付宝支付"/>
-                                    </div>
-                                    <div>
-                                        <asp:Label ID="Content" runat="server"></asp:Label>
-                                    </div>
-                                        发布时间：<asp:Label ID="Time" runat="server"></asp:Label>
-            </div>
-        </div><!--/.sidebar-offcanvas-->
-    </div><!--/row-->
+    <div class="blog-header">
+        <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
+    </div>
 
-    <hr>
+    <div class="row">
 
-    <footer>
-        <p>&copy; 东华理工大学长江学院 2015</p>
-    </footer>
+        <div class="col-sm-8 blog-main">
 
-</div><!--/.container-->
+            <div class="blog-post">
+                <h2 class="blog-post-title"><asp:Label ID="Title" runat="server"></asp:Label></h2>
+
+                <p><asp:Label ID="Introduction" runat="server"></asp:Label></p>
+                <p>
+                价格：￥<asp:Label ID="Price" runat="server"></asp:Label>万元
+                </p>
+                <p>
+                <asp:ImageButton runat="server" ImageUrl="imgs/alipay.png" ToolTip="支付宝支付"/>
+                <span style="padding:10px ">*该商品支持支付宝担保交易</span>
+                </p>
+                <hr>
+                <p><asp:Label ID="Content" runat="server"></asp:Label></p>
+
+                <p>发布时间：<asp:Label ID="Time" runat="server"></asp:Label></p>
+            </div><!-- /.blog-post -->
+            <!--<nav>-->
+                <!--<ul class="pager">-->
+                    <!--<li><a href="#">上一篇</a></li>-->
+                    <!--<li><a href="#">下一篇</a></li>-->
+                <!--</ul>-->
+            <!--</nav>-->
+
+        </div><!-- /.blog-main -->
+
+    </div><!-- /.row -->
+
+</div><!-- /.container -->
 </form>
+<footer class="blog-footer">
+    <p>东华理工大学长江学院<a href="#">信息工程系</a> 由 <a href="#">赖思思</a>制作.</p>
+    <p>
+        <a href="#">返回顶部</a>
+    </p>
+</footer>
+
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="js/jquery.min.js"></script>
 <script src="dist/js/bootstrap.min.js"></script>
-
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-
-<script src="js/offcanvas.js"></script>
 </body>
 </html>
