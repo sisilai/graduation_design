@@ -48,7 +48,6 @@
                 <li><a href="index.html">首页</a></li>
                 <li class="active"><a href="newsCenter.aspx">新闻中心</a></li>
                 <li><a href="onlineOrdering.aspx">在线订购</a></li>
-
                 <li><a href="customerMessage.html">在线客服</a></li>
             </ul>
         </div><!-- /.nav-collapse -->
