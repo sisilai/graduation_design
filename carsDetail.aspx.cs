@@ -12,9 +12,10 @@ public partial class carsDetail : System.Web.UI.Page
     string strCon = ConfigurationManager.ConnectionStrings["DatabaseConnection"].ConnectionString;
     SqlConnection conn;
     SqlCommand comm;
+    int id=0;
     protected void Page_Load(object sender, EventArgs e)
     {
-        int id =Convert.ToInt32(Request.QueryString["id"]);
+        id =Convert.ToInt32(Request.QueryString["id"]);
         string sql = String.Format("select * from gd_cars where id='{0}'", id);
         using (conn = new SqlConnection(strCon))
         {
@@ -43,8 +44,8 @@ public partial class carsDetail : System.Web.UI.Page
             reader.Close();
         }
     }
-        protected void BtnAlipay_Click(object sender, EventArgs e)
-        {
-
-        }
+    protected void aliPayBtn_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("./alipay/default.aspx?id="+id);
+    }
 }

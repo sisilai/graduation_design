@@ -12,6 +12,9 @@ using System.Text;
 using System.IO;
 using System.Xml;
 using Com.Alipay;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
 
 /// <summary>
 /// 功能：纯担保交易接口接入页
@@ -31,6 +34,10 @@ using Com.Alipay;
 /// </summary>
 public partial class _Default : System.Web.UI.Page 
 {
+     string strCon = ConfigurationManager.ConnectionStrings["DatabaseConnection"].ConnectionString;
+     SqlConnection conn;
+     SqlCommand comm;
+     int id=0;
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!Page.IsPostBack)
@@ -42,11 +49,39 @@ public partial class _Default : System.Web.UI.Page
             WIDshow_url.Attributes.Add("readonly", "true");
 
             WIDout_trade_no.Text = GetTimeStamp();
-            WIDsubject.Text = "汽车1";
-            WIDprice.Text = "1000000";
-            WIDbody.Text = "内容1";
-            WIDshow_url.Text = "http://www.ndd001.com/graduation_design/online_ordering.html";
+            id =Convert.ToInt32(Request.QueryString["id"]);
+            WIDshow_url.Text = "http://www.ndd001.com/carsDetail.aspx?id="+id;
+                    string sql = String.Format("select * from gd_cars where id='{0}'", id);
+                    using (conn = new SqlConnection(strCon))
+                    {
+                        conn.Open();
+                        comm = new SqlCommand(sql, conn);
+                        SqlDataReader reader = comm.ExecuteReader();
+                        try
+                        {
+                            if (reader.Read())
+                            {
+                                WIDsubject.Text = reader.GetString(1);
+                                WIDbody.Text = reader.GetString(2);
+                                WIDprice.Text = reader.GetString(4);
+                            }
+                        }
+                        catch (System.Data.SqlTypes.SqlNullValueException ex)
+                        {
+                            Response.Write(ex.Message);
+                        }
+                        finally
+                        {
+
+                        }
+                        reader.Close();
+                    }
         }
+    }
+
+    protected void WIDshow_url_Click(object sender, EventArgs e)
+    {
+        Response.Redirect(WIDshow_url.Text);
     }
     public static string GetTimeStamp()
     {
@@ -78,9 +113,12 @@ public partial class _Default : System.Web.UI.Page
         //必填
 
         //付款金额
-        string price = WIDprice.Text.Trim();
-        //必填
+        //string price = WIDprice.Text.Trim();
+        int priceNumber = Convert.ToInt32(WIDprice.Text.Trim());
 
+        //必填
+        priceNumber = priceNumber*10000;
+        string price = Convert.ToString(priceNumber);
         //商品数量
         string quantity = "1";
         //必填，建议默认为1，不改变值，把一次交易看成是一次下订单而非购买一件商品

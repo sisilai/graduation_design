@@ -185,7 +185,7 @@ ul,ol{
                     <dt>商品展示地址：</dt>
                     <dd>
                         <span class="null-star">*</span>
-                        <asp:Label ID="WIDshow_url" name="WIDshow_url" runat="server"></asp:Label>
+                        <asp:LinkButton ID="WIDshow_url" name="WIDshow_url" runat="server" onclick="WIDshow_url_Click"></asp:LinkButton>
                         <span><!--需以http://开头的完整路径，如：http://www.商户网站.com/myorder.html-->
 </span>
                     </dd>

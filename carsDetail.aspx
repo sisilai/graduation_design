@@ -74,7 +74,7 @@
                 价格：￥<asp:Label ID="Price" runat="server"></asp:Label>万元
                 </p>
                 <p>
-                <asp:ImageButton runat="server" ImageUrl="imgs/alipay.png" ToolTip="支付宝支付"/>
+                <asp:ImageButton runat="server" ImageUrl="imgs/alipay.png" ID="aliPayBtn" ToolTip="支付宝支付" onclick="aliPayBtn_Click"/>
                 <span style="padding:10px ">*该商品支持支付宝担保交易</span>
                 </p>
                 <hr>
