@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class newsDetail : System.Web.UI.Page
+public partial class admin_newsDetail : System.Web.UI.Page
 {
     string strCon = ConfigurationManager.ConnectionStrings["DatabaseConnection"].ConnectionString;
     SqlConnection conn;
