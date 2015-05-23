@@ -163,9 +163,9 @@ public partial class _Default : System.Web.UI.Page
 
         //把请求参数打包成数组
         SortedDictionary<string, string> sParaTemp = new SortedDictionary<string, string>();
-        sParaTemp.Add("partner", Config.Partner);
-        sParaTemp.Add("seller_email", Config.Seller_email);
-        sParaTemp.Add("_input_charset", Config.Input_charset.ToLower());
+        sParaTemp.Add("partner", AlipayConfig.Partner);
+        sParaTemp.Add("seller_email", AlipayConfig.Seller_email);
+        sParaTemp.Add("_input_charset", AlipayConfig.Input_charset.ToLower());
         sParaTemp.Add("service", "create_partner_trade_by_buyer");
         sParaTemp.Add("payment_type", payment_type);
         sParaTemp.Add("notify_url", notify_url);

@@ -22,7 +22,7 @@ namespace Com.Alipay
     /// 2.点击“商家服务”(https://b.alipay.com/order/myOrder.htm)
     /// 3.点击“查询合作者身份(PID)”、“查询安全校验码(Key)”
     /// </summary>
-    public class Config
+    public class AlipayConfig
     {
         #region 字段
         private static string partner = "";
@@ -32,7 +32,7 @@ namespace Com.Alipay
         private static string sign_type = "";
         #endregion
 
-        static Config()
+        static AlipayConfig()
         {
             //↓↓↓↓↓↓↓↓↓↓请在这里配置您的基本信息↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
