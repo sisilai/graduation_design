@@ -73,12 +73,6 @@
         </div><!--/.sidebar-offcanvas-->
     </div><!--/row-->
 
-    <hr>
-
-    <footer>
-        <p>&copy; 东华理工大学长江学院 2015</p>
-    </footer>
-
 </div><!--/.container-->
 </form>
 
