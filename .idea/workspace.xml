@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02f7f7c0-f882-4050-bc9c-5dca84176a96" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customerMessage.html" afterPath="$PROJECT_DIR$/customerMessage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newsCenter.aspx" afterPath="$PROJECT_DIR$/newsCenter.aspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/onlineOrdering.aspx" afterPath="$PROJECT_DIR$/onlineOrdering.aspx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="02f7f7c0-f882-4050-bc9c-5dca84176a96" name="Default" comment="" />
     <ignored path="graduation_design.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,8 +67,8 @@
       <file leaf-file-name="onlineOrdering.aspx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/onlineOrdering.aspx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5828221" vertical-offset="732" max-vertical-offset="1547">
-              <caret line="71" column="33" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.8122699" vertical-offset="732" max-vertical-offset="1547">
+              <caret line="82" column="39" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -338,7 +333,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -751,8 +746,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/onlineOrdering.aspx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5828221" vertical-offset="732" max-vertical-offset="1547">
-          <caret line="71" column="33" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.8122699" vertical-offset="732" max-vertical-offset="1547">
+          <caret line="82" column="39" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
           <folding />
         </state>
       </provider>
