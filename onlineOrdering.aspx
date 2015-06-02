@@ -12,19 +12,13 @@
     <link rel="icon" href="imgs/favicon.ico">
     <title>在线订购</title>
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link href="css/offcanvas.css" rel="stylesheet">
     <link href="css/ordering.css" rel="stylesheet">
-    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie8-responsive-file-warning.js"></script>
     <script src="assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->
 </head>
-
 <body>
 <nav class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
@@ -44,10 +38,9 @@
                 <li class="active"><a href="onlineOrdering.aspx">在线订购</a></li>
                 <li><a href="customerMessage.html">在线客服</a></li>
             </ul>
-        </div><!-- /.nav-collapse -->
-    </div><!-- /.container -->
-</nav><!-- /.navbar -->
-
+        </div>
+    </div>
+</nav>
 <div class="container">
     <form runat="server">
                     <asp:GridView ID="gvCars" runat="server" Width="100%" Height="120px" GridLines="None" ShowHeader="False" EnableModelValidation="True" AutoGenerateColumns="False">
@@ -69,17 +62,10 @@
                                      font-bold="true"/>
                         </asp:GridView>
                         </form>
-    <!-- /END THE FEATURETTES -->
-</div><!--/.container-->
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
+</div>
 <script src="js/jquery.min.js"></script>
 <script src="dist/js/bootstrap.min.js"></script>
-
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-
 <script src="js/offcanvas.js"></script>
 </body>
 </html>

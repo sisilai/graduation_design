@@ -1,38 +1,23 @@
 <!--新闻中心-->
 <%@ Page Language="C#" AutoEventWireup="true" CodeFile="carsDetail.aspx.cs" Inherits="carsDetail" validaterequest="false"%>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="imgs/favicon.ico">
-
     <title>汽车信息详情</title>
-
-    <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="css/blog.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie8-responsive-file-warning.js"></script>
     <script src="assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->
 </head>
-
 <body>
-
 <nav class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
         <div class="navbar-header">
@@ -51,24 +36,18 @@
                 <li class="active"><a href="onlineOrdering.aspx">在线订购</a></li>
                 <li><a href="customerMessage.html">在线客服</a></li>
             </ul>
-        </div><!-- /.nav-collapse -->
-    </div><!-- /.container -->
-</nav><!-- /.navbar -->
-
+        </div>
+    </div>
+</nav>
 <form runat="server">
     <div class="container">
-
     <div class="blog-header">
         <p class="lead blog-description"></p>
     </div>
-
     <div class="row">
-
         <div class="col-sm-8 blog-main">
-
             <div class="blog-post">
                 <h2 class="blog-post-title"><asp:Label ID="Title" runat="server"></asp:Label></h2>
-
                 <p><asp:Label ID="Introduction" runat="server"></asp:Label></p>
                 <p>
                 价格：￥<asp:Label ID="Price" runat="server"></asp:Label>万元
@@ -79,21 +58,11 @@
                 </p>
                 <hr>
                 <p><asp:Label ID="Content" runat="server"></asp:Label></p>
-
                 <p>发布时间：<asp:Label ID="Time" runat="server"></asp:Label></p>
-            </div><!-- /.blog-post -->
-            <!--<nav>-->
-                <!--<ul class="pager">-->
-                    <!--<li><a href="#">上一篇</a></li>-->
-                    <!--<li><a href="#">下一篇</a></li>-->
-                <!--</ul>-->
-            <!--</nav>-->
-
-        </div><!-- /.blog-main -->
-
-    </div><!-- /.row -->
-
-</div><!-- /.container -->
+            </div>
+        </div>
+    </div>
+</div>
 </form>
 <footer class="blog-footer">
     <p>东华理工大学长江学院<a href="#">信息工程系</a> 由 <a href="#">赖思思</a>制作.</p>
@@ -101,14 +70,8 @@
         <a href="#">返回顶部</a>
     </p>
 </footer>
-
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
 <script src="js/jquery.min.js"></script>
 <script src="dist/js/bootstrap.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
