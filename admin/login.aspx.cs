@@ -14,28 +14,18 @@ public partial class admin_login : System.Web.UI.Page
     {
         this.SetFocus(inputName);
     }
-    protected void Button1_Click(object sender, EventArgs e)
+    protected void loginBtn_Click(object sender, EventArgs e)
     {
 
         string userName = inputName.Text;
         string password = inputPassword.Text;
-        //欲进行md5加密的字符串
-        //string test = "123abc";
-
-        //获取加密服务
+        //MD5加密
         System.Security.Cryptography.MD5CryptoServiceProvider md5CSP = new System.Security.Cryptography.MD5CryptoServiceProvider();
-
-        //获取要加密的字段，并转化为Byte[]数组
         byte[] testEncrypt = System.Text.Encoding.Unicode.GetBytes(password);
-
-        //加密Byte[]数组
         byte[] resultEncrypt = md5CSP.ComputeHash(testEncrypt);
-
-        //将加密后的数组转化为字段(普通加密)
         string testResult = System.Text.Encoding.Unicode.GetString(resultEncrypt);
-
-        //作为密码方式加密
         string EncryptPWD = System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(password, "MD5");
+
         string sql = String.Format("select count(*) from [gd_login] where name='{0}' and pwd='{1}'", userName, EncryptPWD);
         using (conn = new SqlConnection(strConn))
         {
