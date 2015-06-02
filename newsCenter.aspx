@@ -43,7 +43,6 @@
 </nav>
 <form runat="server">
     <div class="container">
-
     <div class="row row-offcanvas row-offcanvas-right">
         <div class="col-xs-6 col-sm-12 sidebar-offcanvas" id="sidebar">
             <div class="list-group">
