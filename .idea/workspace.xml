@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02f7f7c0-f882-4050-bc9c-5dca84176a96" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.aspx.cs" afterPath="$PROJECT_DIR$/admin/index.aspx.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/login.aspx.cs" afterPath="$PROJECT_DIR$/admin/login.aspx.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/login.aspx" afterPath="$PROJECT_DIR$/admin/login.aspx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/carsDetail.aspx" afterPath="$PROJECT_DIR$/carsDetail.aspx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newsDetail.aspx" afterPath="$PROJECT_DIR$/newsDetail.aspx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="graduation_design.iws" />
@@ -29,56 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="addNewsPreview.aspx.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/addNewsPreview.aspx.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addNewsPreview.aspx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/addNewsPreview.aspx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="357">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editCarsInfo.aspx.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/editCarsInfo.aspx.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="carsInfoDetail.aspx.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/carsInfoDetail.aspx.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="867">
-              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="carsInfoDetail.aspx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/carsInfoDetail.aspx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-28.23077" vertical-offset="252" max-vertical-offset="1105">
-              <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="login.aspx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/login.aspx">
           <provider selected="true" editor-type-id="text-editor">
@@ -99,11 +49,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.aspx.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.aspx.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/index.aspx.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72131145" vertical-offset="64" max-vertical-offset="986">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="986">
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.75092024" vertical-offset="714" max-vertical-offset="2142">
+              <caret line="78" column="100" selection-start-line="78" selection-start-column="100" selection-end-line="78" selection-end-column="100" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="carsDetail.aspx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/carsDetail.aspx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.76923" vertical-offset="523" max-vertical-offset="2040">
+              <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customerMessage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/customerMessage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.307692" vertical-offset="1862" max-vertical-offset="2703">
+              <caret line="136" column="21" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newsCenter.aspx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newsCenter.aspx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.307692" vertical-offset="817" max-vertical-offset="1632">
+              <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newsDetail.aspx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newsDetail.aspx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.961538" vertical-offset="536" max-vertical-offset="1836">
+              <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="onlineOrdering.aspx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/onlineOrdering.aspx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-53.615383" vertical-offset="0" max-vertical-offset="1547">
+              <caret line="82" column="39" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -114,16 +124,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="374">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editCarsInfo.aspx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/editCarsInfo.aspx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1343">
-              <caret line="37" column="100" selection-start-line="37" selection-start-column="100" selection-end-line="37" selection-end-column="100" />
               <folding />
             </state>
           </provider>
@@ -162,11 +162,8 @@
         <option value="$PROJECT_DIR$/newsDetails.aspx" />
         <option value="$PROJECT_DIR$/newsDetail.aspx.cs" />
         <option value="$PROJECT_DIR$/carsDetail.aspx.cs" />
-        <option value="$PROJECT_DIR$/carsDetail.aspx" />
         <option value="$PROJECT_DIR$/alipay/default.aspx" />
         <option value="$PROJECT_DIR$/admin/newsDetail.aspx.cs" />
-        <option value="$PROJECT_DIR$/newsDetail.aspx" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/admin/addCarsInfo.aspx" />
         <option value="$PROJECT_DIR$/admin/addNews.aspx" />
         <option value="$PROJECT_DIR$/admin/editCarsInfo.aspx" />
@@ -188,6 +185,9 @@
         <option value="$PROJECT_DIR$/admin/login.aspx" />
         <option value="$PROJECT_DIR$/admin/login.aspx.cs" />
         <option value="$PROJECT_DIR$/admin/index.aspx.cs" />
+        <option value="$PROJECT_DIR$/carsDetail.aspx" />
+        <option value="$PROJECT_DIR$/newsDetail.aspx" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -352,7 +352,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -614,48 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carsDetail.aspx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1186" max-vertical-offset="2040">
-          <caret line="76" column="124" selection-start-line="76" selection-start-column="124" selection-end-line="76" selection-end-column="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/customerMessage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1875" max-vertical-offset="2703">
-          <caret line="136" column="21" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1314" max-vertical-offset="2142">
-          <caret line="78" column="104" selection-start-line="78" selection-start-column="104" selection-end-line="78" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newsCenter.aspx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="817" max-vertical-offset="1632">
-          <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newsDetail.aspx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1008" max-vertical-offset="1836">
-          <caret line="49" column="63" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/onlineOrdering.aspx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.923077" vertical-offset="694" max-vertical-offset="1547">
-          <caret line="82" column="39" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/addCarsInfo.aspx.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="854">
@@ -762,8 +720,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/index.aspx.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72131145" vertical-offset="64" max-vertical-offset="986">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="986">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customerMessage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.307692" vertical-offset="1862" max-vertical-offset="2703">
+          <caret line="136" column="21" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newsCenter.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.307692" vertical-offset="817" max-vertical-offset="1632">
+          <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineOrdering.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-53.615383" vertical-offset="0" max-vertical-offset="1547">
+          <caret line="82" column="39" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/carsDetail.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.76923" vertical-offset="523" max-vertical-offset="2040">
+          <caret line="61" column="41" selection-start-line="61" selection-start-column="41" selection-end-line="61" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newsDetail.aspx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.961538" vertical-offset="536" max-vertical-offset="1836">
+          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75092024" vertical-offset="714" max-vertical-offset="2142">
+          <caret line="78" column="100" selection-start-line="78" selection-start-column="100" selection-end-line="78" selection-end-column="100" />
           <folding />
         </state>
       </provider>

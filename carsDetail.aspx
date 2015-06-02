@@ -59,7 +59,7 @@
     <div class="container">
 
     <div class="blog-header">
-        <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
+        <p class="lead blog-description"></p>
     </div>
 
     <div class="row">
