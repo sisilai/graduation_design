@@ -20,10 +20,10 @@
     <div class="container">
         <form id="form1" class="form-signin" runat="server">
             <h2 class="form-signin-heading">请登录</h2>
-            <label for="inputEmail" class="sr-only">用户名</label>
-            <asp:TextBox ID="inputEmail" runat="server" class="form-control" placeholder="用户名" required autofocus></asp:TextBox>
+            <label for="inputName" class="sr-only">用户名</label>
+            <asp:TextBox ID="inputName" name="inputName" runat="server" class="form-control" placeholder="用户名" required autofocus></asp:TextBox>
             <label for="inputPassword" class="sr-only">密码</label>
-            <asp:TextBox ID="inputPassword" runat="server" TabIndex="1" TextMode="Password" class="form-control" placeholder="密码" required></asp:TextBox>
+            <asp:TextBox ID="inputPassword" name="inputPassword" runat="server" TabIndex="1" TextMode="Password" class="form-control" placeholder="密码" required></asp:TextBox>
             <asp:Button ID="Button1" runat="server" Text="登录" OnClick="Button1_Click" TabIndex="3" class="btn btn-lg btn-primary btn-block" type="submit" />
         </form>
     </div>

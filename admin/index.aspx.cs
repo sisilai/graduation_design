@@ -18,7 +18,11 @@ public partial class admin_index : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            bind();
+            if(Session["userName"] != null){
+                bind();
+            }else{
+                Response.Redirect("login.aspx");
+            }
         }
     }    
     public void bind()

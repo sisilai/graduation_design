@@ -12,12 +12,12 @@ public partial class admin_login : System.Web.UI.Page
     SqlConnection conn;
     protected void Page_Load(object sender, EventArgs e)
     {
-        this.SetFocus(inputEmail);
+        this.SetFocus(inputName);
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
 
-        string userName = inputEmail.Text;
+        string userName = inputName.Text;
         string password = inputPassword.Text;
         //欲进行md5加密的字符串
         //string test = "123abc";
@@ -36,7 +36,6 @@ public partial class admin_login : System.Web.UI.Page
 
         //作为密码方式加密
         string EncryptPWD = System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(password, "MD5");
-        Response.Write(EncryptPWD);
         string sql = String.Format("select count(*) from [gd_login] where name='{0}' and pwd='{1}'", userName, EncryptPWD);
         using (conn = new SqlConnection(strConn))
         {
@@ -47,6 +46,7 @@ public partial class admin_login : System.Web.UI.Page
                 int n = (int)comm.ExecuteScalar();
                 if (n == 1)
                 {
+                    Session["userName"] = Request.Form["inputName"].ToString();
                     Response.Redirect("index.aspx");
                 }
                 else
